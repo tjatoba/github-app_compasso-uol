@@ -1,12 +1,21 @@
 import styled from "styled-components"
-import { elementColor} from "../../constants/colors"
+import { elementColor } from "../../constants/colors"
 
-export const Header = styled.header`
-    width: 95%;
+
+export const DivButton = styled.div`
+    margin-bottom: 6px;
+`
+
+export const DivBackButton = styled.div`
+    height: 60%;
+`
+
+export const Header = styled.div`
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    width: 95%;
+    height: 10vh;
 `
 export const Title = styled.h2`
     color: ${elementColor};

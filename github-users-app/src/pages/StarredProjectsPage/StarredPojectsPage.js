@@ -36,20 +36,20 @@ const StarredPage = () => {
             </StarredCard>
         )
     })
-    return (
-        <MainContainer>
-            <Header>
-                <Title>Starred</Title>
-                <Button 
-                    onClick={() => goBack(history)}
-                    variant={"contained"}
-                    color={"primary"} >
-                        Back
-                </Button>
-            </Header>
-                {starred[0] ? starredList : <Title>STARREDS NOT FOUND</Title>}
-        </MainContainer>
-    )
+        return (
+            <MainContainer>
+                <Header>
+                    <Title>Starred</Title>
+                    <Button 
+                        onClick={() => goBack(history)}
+                        variant={"contained"}
+                        color={"primary"}>
+                            Back
+                        </Button>
+                    </Header>
+                        {starred[0] ? starredList : <Title>STARREDS NOT FOUND</Title>}
+                </MainContainer>
+        )
 }
 
 export default StarredPage

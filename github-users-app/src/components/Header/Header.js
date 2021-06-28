@@ -11,8 +11,9 @@ export const Header = () => {
         <StyledToolbar>
             <LogoImg src = {Logo} />
             <Typography 
-            color={elementColor}>
-                WELCOME TO THE <b>FIRST GITHUB SEARCH ENGINE</b>
+                align={"center"}
+                color={elementColor}>
+                    WELCOME TO MY <b>FIRST GITHUB SEARCH ENGINE</b>
             </Typography>
         </StyledToolbar>
         </AppBar>

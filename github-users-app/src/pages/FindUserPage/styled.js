@@ -9,6 +9,9 @@ export const PageTitle = styled.h1`
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
     word-spacing: 25px;
     letter-spacing: 10px;
+        @media screen and (min-width: 300px) and (max-width: 420px) {
+            padding:90px;
+        }
 `
 
 export const InputField = styled.form`

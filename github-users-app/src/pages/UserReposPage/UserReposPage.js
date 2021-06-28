@@ -44,20 +44,20 @@ const ReposPage = () => {
         )
     })
 
-    return(
-        <MainContainer>
-            <Header>
-                <Title>Repos</Title>
-                <Button 
-                    onClick={() => goBack(history)}
-                    variant={"contained"}
-                    color={"primary"} >
-                        Back
-                </Button>
-            </Header>            
-                {repos[0] ? reposList: <Title>REPOS NOT FOUND</Title>}            
-        </MainContainer>
-    )
+        return(
+            <MainContainer>
+                <Header>
+                    <Title>Repos</Title>
+                    <Button 
+                        onClick={() => goBack(history)}
+                        variant={"contained"}
+                        color={"primary"}>
+                            Back
+                    </Button>
+                </Header>            
+                    {repos[0] ? reposList: <Title>REPOS NOT FOUND</Title>}            
+            </MainContainer>
+        )
 }
 
 export default ReposPage
