@@ -1,10 +1,10 @@
 import React from "react"
-import {StarredContainer, Title, Description} from "./styled"
+import {StarredContainer, StarredTitle, Description} from "./styled"
 
 const StarredCard = (props) => {
     return (
         <StarredContainer>
-            <Title>{props.name}</Title>
+            <StarredTitle>{props.name}</StarredTitle>
             <Description>{props.description}</Description>
         </StarredContainer>
     )

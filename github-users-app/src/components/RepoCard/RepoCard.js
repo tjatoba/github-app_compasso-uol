@@ -1,10 +1,10 @@
 import React from "react"
-import {RepoContainer, Title, CreatedAt} from "./styled"
+import {RepoContainer, RepoTitle, CreatedAt} from "./styled"
 
 const RepoCard = (props) => {
     return (
         <RepoContainer>
-            <Title>{props.repoName}</Title>
+            <RepoTitle>{props.repoName}</RepoTitle>
             <CreatedAt>{props.createdAt}</CreatedAt>
         </RepoContainer>
     )

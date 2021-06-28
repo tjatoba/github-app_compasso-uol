@@ -2,7 +2,7 @@ import axios from "axios"
 import React, { useEffect, useState } from "react"
 import { useHistory, useParams } from "react-router-dom"
 import { BASE_URL } from "../../constants/url"
-import { goToFindUserPage, goToUserReposPage, goToStarredProjectsPage} from "../../routes/coordinator"
+import { goToFindUserPage, goToUserReposPage, goToStarredProjectsPage, goToFollowersPage, goToFollowingPage} from "../../routes/coordinator"
 import { MainContainer } from "../../styled"
 import Button from '@material-ui/core/Button'
 import { Header, UserName, ProfileImage, ContainerBio, Name, Bio, DivButtons} from './styled'
@@ -12,7 +12,7 @@ import { CircularProgress } from "@material-ui/core"
 const ProfileUserPage = () => {
 
     const history = useHistory()
-
+    
     const { username } = useParams()
     const [profile, setProfile] = useState({})
     const [starred, setStarred] = useState([])
@@ -28,7 +28,7 @@ const ProfileUserPage = () => {
             setProfile(profile.data)
         } catch (error) {
             goToFindUserPage(history)
-            alert("Este usuário não existe")
+            alert(error.response.data.message)
         }
     }
 
@@ -71,6 +71,18 @@ const ProfileUserPage = () => {
                     variant={"outlined"}
                     color={characterColor}> 
                         STARRED {starred.length} 
+                </Button>
+                <Button 
+                    onClick = {() => goToFollowersPage(history, username)}
+                    variant={"outlined"}
+                    color={characterColor}>
+                        FOLLOWERS {profile.followers}
+                </Button>
+                <Button
+                    onClick = {() => goToFollowingPage(history, username)}
+                    variant={"outlined"}
+                    color={characterColor}>
+                        FOLLOWING {profile.following}
                 </Button>
             </DivButtons>
 

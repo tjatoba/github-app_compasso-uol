@@ -12,11 +12,11 @@ export const RepoContainer = styled.div`
     padding: 5px 20px;
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 `
-export const Title = styled.h2`
-color: ${elementColor};
-font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+export const RepoTitle = styled.h2`
+    color: ${elementColor};
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 `
 export const CreatedAt = styled.h5`
-color: ${elementColor};
-font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: ${elementColor};
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 `
