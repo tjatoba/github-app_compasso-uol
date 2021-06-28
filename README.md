@@ -44,22 +44,26 @@ Github Search Engine shows as a result your repositories, the most starred repos
 - [Thiago Jatobá](https://github.com/tjatoba)
 
 ## How to view?
-[Pokedex] (https://ghsearchengine-jatoba.surge.sh/)
+[Github Search Engine](https://ghsearchengine-jatoba.surge.sh/)
 
 ## Functionalities
-- Homepage with a Pokémon's rendered list.
-- Each Pokémon card has a button to add it to Pokedex ("Pegar Pokemon") and another button to access details from each Pokémon ("Ver Detalhes").
-- Header with button to access User's Pokedex page.
-- User's Pokedex page list of Pokémon that will be rendered on the screen with the selected Pokémon on the Homepage (there is no specific endpoint in API for this execution, this part was created by us).
-- Pokedex Header with button to return to Homepage.
-- Detail Page for a specific Pokémon by clicking on "Ver Detalhes" button, on the card presented at Home.
-- Detail Page Header with button to go back to the last page and button for directing to the user's Pokedex.
+- Search field.
+- User Profile Page with avatar, name and description.
+- Button for Repos page.
+- Button for Starred page.
+- Button for the Followers page.
+- Button for the Following page.
+- Back button on every page.
+- Clickable followers, which can click to visualize profiles.
+- Clickable followed people, which can click to visualize profiles.
+- Error page with Clickable link to back to search page.
 
 ## Dependencies
 - React
 - React-Dom
-- Styled components
+- Styled Components 
+- MaterialUi
 - Axios
 
 ## API
-[PokeAPI] (https://pokeapi.co/)
+[GitHub API](https://docs.github.com/en/rest)
