@@ -9,7 +9,7 @@ Motor de busca de usuários do github, que mostra como resultado os seus reposit
 - [Thiago Jatobá](https://github.com/tjatoba)
 
 ## Como visualizar?
-[Github Search Engine](ghsearchengine-jatoba.surge.sh)
+[Github Search Engine](https://ghsearchengine-jatoba.surge.sh/)
 
 ## Funcionalidades
 - Campo de busca.
@@ -44,7 +44,7 @@ Github Search Engine shows as a result your repositories, the most starred repos
 - [Thiago Jatobá](https://github.com/tjatoba)
 
 ## How to view?
-[Pokedex] (ghsearchengine-jatoba.surge.sh)
+[Pokedex] (https://ghsearchengine-jatoba.surge.sh/)
 
 ## Functionalities
 - Homepage with a Pokémon's rendered list.
