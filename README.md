@@ -38,7 +38,7 @@ Motor de busca de usuários do github, que mostra como resultado os seus reposit
 <div align= 'center'><b>*ENGLISH VERSION*</b></div>
 
 ## Briefing
-Github Search Engine shows as a result your repositories, the most starred repositories, your public followers and who you are following, all from the GitHub API data source.
+Github Search Engine shows, as a result, your repositories, the most starred repositories, your public followers and who you are following, all from the GitHub API data source.
 
 ## Developers
 - [Thiago Jatobá](https://github.com/tjatoba)
